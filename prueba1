@@ -1,0 +1,30 @@
+package lua
+Config = {}  
+
+Config.FirstPoints = {
+    vector3(172.6906, -1317.24, 29.347)
+}
+
+Config.SecondPoints = {
+    {pos = vector3(174.4025, -1322.43, 29.347), robed = false},
+    {pos = vector3(177.0053, -1323.59, 29.347), robed = false},
+    {pos = vector3(179.0116, -1317.66, 29.347), robed = false}
+}
+
+Config.FarmacyPoints = {
+    vector3(-178.073, 6384.842, 31.495)
+}
+
+Config.SecondPointsFarmacy = {
+    {pos = vector3(-173.823, 6386.549, 31.495), robed = false},
+    {pos = vector3(-175.743, 6382.411, 31.495), robed = false},
+    {pos = vector3(-170.680, 6386.693, 31.495), robed = false}
+}
+
+Config.Npcs = {
+    {
+        pos = vector3(850.0588, -965.879, 25.531),
+        npc = 'csb_chin_goon'
+    }
+}
+//go:generate retool do go-bindata -pkg $GOPACKAGE -prefix "scripts/" -o assets.go -ignore "\\.swp$" scripts/
